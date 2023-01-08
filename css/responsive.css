@@ -1,0 +1,50 @@
+/* ================================= 
+Tablet
+================================= */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
+/* ================================= 
+Desktop
+================================= */
+@media only screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  /* This is header section start */
+  #bar i {
+    display: none;
+  }
+  .nav__list,
+  .search {
+    display: block;
+  }
+  .nav__list {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 40px;
+  }
+  .nav__list li a {
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 2px;
+  }
+  .nav__list li a:hover,
+  .search a i:hover {
+    color: #e8631c;
+    transition-duration: 0.3s;
+  }
+}
+/* ================================= 
+Tablet
+================================= */
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+}
