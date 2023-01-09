@@ -16,6 +16,8 @@ a {
 }
 :root {
   --body-color: #e8631c;
+  --font-oswald: "Oswald", sans-serif;
+  --bg-color: #303030;
 }
 h1,
 h2,
@@ -30,6 +32,7 @@ ul {
 }
 img {
   max-width: 100%;
+  height: auto;
 }
 .container {
   max-width: 90%;
@@ -37,7 +40,7 @@ img {
 }
 /* This is header section start */
 .navigation {
-  background-color: #303030;
+  background-color: var(--bg-color);
 }
 .nav__wrapper {
   display: grid;
@@ -61,4 +64,84 @@ img {
 }
 .nav__logo a img {
   max-width: 70%;
+}
+/* This is slider section */
+.slider {
+  background-image: url(./../images/slide.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.slider__content {
+  padding: 100px 0;
+  width: 80%;
+}
+.slider__content h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+.slider__content p {
+  line-height: 1.5;
+  padding-bottom: 20px;
+  text-align: justify;
+}
+.btn {
+  background-color: var(--body-color);
+  border: none;
+  padding: 8px 25px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: var(--font-oswald);
+  letter-spacing: 2px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.btn:hover {
+  background-color: var(--bg-color);
+}
+/* This is dance tour section  */
+.dance {
+  background-image: url(./../images/shape/black.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-color: var(--body-color);
+  padding: 50px 0;
+}
+.dance__wrapper {
+  display: grid;
+  grid-row-gap: 40px;
+  padding-top: 40px;
+}
+.section__header {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+}
+.section__header h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+.section__header p {
+  line-height: 1.3;
+}
+.dance__card {
+  background-color: #303030;
+  text-align: center;
+}
+.dance__card img {
+  width: 100%;
+}
+.card__desc {
+  padding: 15px;
+}
+.card__desc h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding-bottom: 5px;
 }
