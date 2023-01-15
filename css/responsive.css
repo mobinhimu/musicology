@@ -46,6 +46,18 @@ Tablet
     left: 50%;
     transform: translateX(-50%, -50%);
   }
+  /* This is pricing section */
+  .price__wrapper {
+    grid-auto-flow: column;
+    grid-column-gap: 30px;
+  }
+  /* This is  Statistics section  */
+  .statistic__option h1 {
+    font-size: 2rem;
+  }
+  .statistic__option h5 {
+    font-size: 1.5rem;
+  }
 }
 
 /* ================================= 
@@ -69,16 +81,60 @@ Desktop
     grid-auto-flow: column;
     grid-column-gap: 40px;
   }
+  .nav__list li {
+    position: relative;
+  }
   .nav__list li a {
     text-transform: uppercase;
     font-family: "Oswald", sans-serif;
     letter-spacing: 2px;
-  }
-  .nav__list li a:hover,
-  .search a i:hover {
-    color: var(--body-color);
     transition-duration: 0.3s;
   }
+  .nav__list li:hover a,
+  .nav__list li a:hover i,
+  .search a:hover i {
+    color: var(--body-color);
+  }
+  .nav__list li:hover ul li a {
+    color: #fff;
+  }
+
+  /* Dropdown */
+  .nav__list ul {
+    position: absolute;
+    width: 200px;
+    background-color: var(--bg-color);
+    padding-top: 18px;
+    display: none;
+  }
+  .nav__list li:hover ul {
+    display: block;
+  }
+  .nav__list ul li a {
+    display: block;
+    padding: 8px 12px;
+    transition-duration: 0s;
+  }
+  .nav__list ul li:hover a {
+    background-color: var(--body-color);
+  }
+  .nav__list ul li:hover ul li a {
+    background-color: transparent;
+  }
+  .nav__list ul ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    padding-top: 0;
+    visibility: hidden;
+  }
+  .nav__list ul li:hover ul {
+    visibility: visible;
+  }
+  .nav__list ul ul li a:hover {
+    background-color: #e8631c !important;
+  }
+
   /* This is slider section */
   .slider__content {
     padding: 150px 0;
@@ -91,7 +147,6 @@ Desktop
   .section__header {
     width: 50%;
   }
-
   /* This is dance tour section  */
   .dance__wrapper {
     grid-column-gap: 40px;
@@ -107,6 +162,10 @@ Desktop
     position: static;
     left: 0%;
     transform: translateX(0%, 0%);
+  }
+  /* This is pricing section */
+  .price__wrapper {
+    grid-column-gap: 50px;
   }
 }
 /* ================================= 
