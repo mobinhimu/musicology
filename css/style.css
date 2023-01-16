@@ -197,3 +197,51 @@ section {
 .statistic__option {
   text-align: center;
 }
+/* This is hear - bert section  */
+.hearbert {
+  background-image: url(./../images/hearbert.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.dearbert__desc,
+.sub__desc {
+  text-align: center;
+}
+.dearbert__desc p,
+.sub__desc p {
+  line-height: 1.5;
+}
+.dearbert__desc h1,
+.sub__desc h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+/* This is subscribe section  */
+.subscribe {
+  background-color: var(--body-color);
+}
+.sub__form {
+  margin-top: 30px;
+}
+.sub__form form {
+  display: grid;
+  grid-template-columns: 1fr 150px;
+  grid-auto-flow: column;
+  width: 100%;
+}
+.sub__form input[type="email"],
+.sub__form input[type="button"] {
+  border: none;
+  outline: none;
+  padding: 12px;
+  color: var(--bg-color);
+}
+.sub__form input[type="button"] {
+  background-color: var(--bg-color);
+  font-family: var(--font-oswald);
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: #ffffff;
+}
