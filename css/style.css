@@ -226,7 +226,8 @@ section {
 }
 .sub__form form {
   display: grid;
-  grid-template-columns: 1fr 150px;
+  grid-template-columns: 1fr 100px;
+  justify-content: center;
   grid-auto-flow: column;
   width: 100%;
 }
@@ -240,6 +241,7 @@ section {
 .sub__form input[type="button"] {
   background-color: var(--bg-color);
   font-family: var(--font-oswald);
+  font-size: 0.625rem;
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
